@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700');
+
+* {
+	transition: all .2s ease;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+	color: $main-color;
+}
+
+a {
+	color: $main-color;
+	padding: 10px 15px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+// header a:hover, .active, .account-row-content-auth-nav a:hover {
+// 	color: #ffffff;
+// 	text-decoration: none;
+// 	background-color: $main-color;
+// }
+
+.account {
+	&-row {
+		&-navigation {
+			& nav {
+				display: flex;
+				& a {
+					text-align: center;
+
+					& i {
+						display: flex;
+						width: 90px;
+						height: 90px;
+						margin: 0 auto;
+						background: #f8f8f8;
+						border-radius: 50%;
+						justify-content: center;
+						align-items: center;
+					} 
+				}
+			}
+		}
+
+		&-content {
+			margin: 30px 0;
+
+			&-auth {
+				margin: 0 auto;
+				border: 1px solid;
+
+				&-login, &-register, &-reset {
+					padding: 30px
+				}
+
+				&-nav {
+					position: relative;
+    				top: -23px;
+
+					& a {
+						background-color: #ffffff;
+					    border-radius: 3px;
+						margin: 0 auto;
+					}
+
+					& a.active, a:hover  {
+						background: #000814;
+					}
+				}
+
+				&-label--group {
+					margin-bottom: .5rem;
+
+					& i {
+						margin: auto 7px auto 0;
+						font-size: 1.2rem;
+						width: 15px;
+					}
+				}
+
+				form {
+					margin: 15px 0;
+				}
+
+				label {
+					display: block;
+					cursor: pointer;
+					margin: 0;
+				}
+
+				input, textarea {
+					margin-bottom: 15px;
+				}
+
+				button {
+					color: #ffffff;
+					background: $main-color;
+					margin-bottom: 10px;
+
+					&:hover {
+						background: $btn-hover;
+					}
+				}
+
+				&-login {
+					&-reset {
+						padding: 0;
+					}
+				}
+
+			}
+		}
+	}
+}
