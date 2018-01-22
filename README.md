@@ -1,13 +1,10 @@
-# agro24-vue-cli-template
+# E-commerce project 
 
-Template project for Vue CLI
+E-commerce project with VueJS
 
 ### Usage
 
 ``` bash
-$ npm install -g vue-cli
-$ vue init russianpro/agro24-vue-cli-template vue-app
-$ cd vue-app
 $ npm install
 $ npm run dev
 ```
